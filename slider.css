@@ -1,0 +1,10 @@
+.main {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    display: grid;
+    justify-items: center;
+  }
+}

@@ -1,13 +1,22 @@
 import {
   update as updateSnake,
   draw as drawSnake,
-  SNAKE_SPEED,
   getSnakeHead,
   snakeIntersection,
 } from './snake.js';
 import { update as updateFood, draw as drawFood } from './food.js';
 import { empty } from './edit.js';
 import { outsideGrid } from './grid.js';
+
+var SNAKE_SPEED = 5;
+var slider = document.querySelector('.slider');
+var sliderValue = document.querySelector('.slider-value');
+
+slider.oninput = () => {
+  SNAKE_SPEED = slider.value;
+  sliderValue.innerText = slider.value;
+  console.log(SNAKE_SPEED);
+};
 
 let lastRenderTime = 0;
 let gameOver = false;

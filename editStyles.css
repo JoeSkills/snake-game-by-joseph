@@ -2,7 +2,7 @@
   body {
     display: grid;
     align-items: start;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-auto-flow: row;
     justify-items: center;
   }
@@ -12,6 +12,7 @@
     grid-template-columns: repeat(3, 1fr);
     width: 50vmin;
     height: 30vmin;
+    padding-top: 0.625rem;
   }
   .controller > * {
     background-color: lightgreen;

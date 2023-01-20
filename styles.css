@@ -1,3 +1,8 @@
+@font-face {
+  font-family: montserrat;
+  src: url(/fonts/Montserrat-Regular.ttf);
+}
+
 body {
   min-height: 100vh;
   width: 100vw;
@@ -6,6 +11,8 @@ body {
   align-items: center;
   margin: 0;
   background-color: black;
+  color: white;
+  font-family: montserrat;
 }
 #game-board {
   background-color: hsl(200, 100%, 50%);
