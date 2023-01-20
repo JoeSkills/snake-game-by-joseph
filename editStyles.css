@@ -18,6 +18,10 @@
     background-color: lightgreen;
     border: 0.25vmin solid white;
   }
+  .controller > *:hover {
+    background-color: green;
+  }
+
   .upArrow {
     grid-column: 2/2;
   }
